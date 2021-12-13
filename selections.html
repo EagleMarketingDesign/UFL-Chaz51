@@ -105,18 +105,88 @@
             </div>
         </div>
     </section>
-
-    <footer>
+    <section class="options">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-md-3">
+                    <img src="./images/caprice_salad.jpg" onclick="lightbox.open();lightbox.slide(1)" class="hover-shadow" />
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="./images/cowboy_steak.jpg" onclick="lightbox.open();lightbox.slide(2)" class="hover-shadow" />
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="./images/pasta_primavera.jpg" onclick="lightbox.open();lightbox.slide(3)" class="hover-shadow" />
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="./images/salmon_blue_crabcake.jpg" onclick="lightbox.open();lightbox.slide(4)" class="hover-shadow" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Modal/Lightbox -->
+    <div id="lightbox" class="lightbox-modal">
+        <span class="lightbox-close cursor" onclick="lightbox.close()">&times;</span>
+        <div class="modal-content">
+
+            <div class="lightbox-slide">
+                <div class="numbertext">1 / 4</div>
+                <img src="./images/caprice_salad.jpg" style="width:100%"/>
+            </div>
+
+            <div class="lightbox-slide">
+                <div class="numbertext">2 / 4</div>
+                <img src="./images/cowboy_steak.jpg" style="width:100%"/>
+            </div>
+
+            <div class="lightbox-slide">
+                <div class="numbertext">3 / 4</div>
+                <img src="./images/pasta_primavera.jpg" style="width:100%"/>
+            </div>
+
+            <div class="lightbox-slide">
+                <div class="numbertext">4 / 4</div>
+                <img src="./images/salmon_blue_crabcake.jpg" style="width:100%"/>
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="lightbox.previous()">&#10094;</a>
+            <a class="next" onclick="lightbox.next()">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="lightbox-caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="row row-cols-4 no-gutters">
+                <div class="col">
+                    <img src="./images/caprice_salad.jpg" onclick="lightbox.open();lightbox.slide(1)" alt="Caprice Salad" class="ligthbox-thumb" />
+                </div>
+                <div class="col">
+                    <img src="./images/cowboy_steak.jpg" onclick="lightbox.open();lightbox.slide(2)" alt="Cowboy Steak" class="ligthbox-thumb" />
+                </div>
+                <div class="col">
+                    <img src="./images/pasta_primavera.jpg" onclick="lightbox.open();lightbox.slide(3)" alt="Pasta Primavera" class="ligthbox-thumb" />
+                </div>
+                <div class="col">
+                    <img src="./images/salmon_blue_crabcake.jpg" onclick="lightbox.open();lightbox.slide(4)" alt="Salmon Blue Crabcake" class="ligthbox-thumb"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row align-items-center text-center">
+                <div class="col-lg-4">
                     <div class="footer-logo">
                         <a href="index.html">
                             <img src="images/logo.svg" alt="Logo">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3">
+
+                <div class="col-lg-4">
                     <div class="footer-contact">
                         <h3>Contact Info</h3>
                         <ul>
@@ -140,5 +210,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/lightbox.js"></script>
 </body>
 </html>
