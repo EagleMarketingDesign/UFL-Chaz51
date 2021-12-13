@@ -17,11 +17,12 @@
     font-style: normal;
 }
 
+
 /*---------------------------------------
    Reset existing browser CSS        
 -----------------------------------------*/
 html, body, div, span, applet, object, iframe,
-p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -29,15 +30,16 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, menu, nav, output,
-ruby, section, summary,
-time, mark, audio, video, input, textarea, button {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    font-family: 'Open Sans', sans-serif;
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 h1, h2, h3, h4, h5, h6{
     margin: 0;
@@ -296,6 +298,7 @@ footer{
     text-align: center;
     padding-top: 20px;
 }
+
 .dining-room{
     padding: 50px 0;
 }
@@ -331,7 +334,8 @@ footer{
     color: #000;
 }
 .contact-form input[type="text"],
-.contact-form input[type="email"]{
+.contact-form input[type="email"],
+.contact-form .comment-field {
     font-size: 14px;
     color: #000;
     border: 0;
@@ -342,9 +346,13 @@ footer{
 .contact-form input[type="text"]:active,
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:active,
-.contact-form input[type="email"]:focus{
+.contact-form input[type="email"]:focus,
+.contact-form .comment-field:active,
+.contact-form .comment-field:focus
+{
     border-bottom: 2px solid #f7d165;
 }
+
 .form-group{
     margin-bottom: 30px;
 }
@@ -395,7 +403,54 @@ footer{
     color: #000;
     text-align: center;
 }
+.dining-room-features ul{
+    padding-left: revert;
+}
 
+.feature-gradient {
+    background: linear-gradient(to top, rgba(255,0,0,0), rgb(249 205 109));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.feature-border-radius {
+    border-radius: 20px;
+}
+
+.feature-box-shadow {
+    box-shadow: 0px 0px 15px 10px #5e5e5e;
+}
+
+.img-wrapper {  
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+.inner-img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.inner-img:hover {
+    transform: scale(1.1);
+}
+
+.keyframe-effect {
+    width:100px;
+    height:100px;
+    background: #c0b6b6;
+    position: relative;
+    animation: horizontal-move 5s linear 0s infinite alternate;
+}
+
+@keyframes horizontal-move {
+    from {left: 0;}
+    to {left: 100%;}
+}
 /*---------------------------------------
    Responsive CSS        
 -----------------------------------------*/
