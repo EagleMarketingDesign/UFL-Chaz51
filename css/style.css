@@ -16,6 +16,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/*---------------------------------------
+   Reset existing browser CSS        
+-----------------------------------------*/
 html, body, div, span, applet, object, iframe,
 p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
