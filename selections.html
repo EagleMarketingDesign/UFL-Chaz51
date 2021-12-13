@@ -12,6 +12,7 @@
     <!-- css Files -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css">
 
     <!-- Font-Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
@@ -57,19 +58,22 @@
             <div class="our-selections">
                 <div class="selection-box">
                     <a href="#">
-                        <img src="images/chaz51_fries.jpg" alt="Green bean fries">
+                        <div class="img-container position-relative">
+                            <img src="images/chaz_fries.jpg" class="w-100" alt="green bean fries">
+                            <div class="feature-gradient"></div>
+                        </div>
                         <h3>Happy Hour</h3>
                     </a>
                 </div>
                 <div class="selection-box">
                     <a href="#">
-                        <img src="images/chaz_steak.jpg" alt="steak dinner">
+                        <img src="images/chaz_steak.jpg class="feature-border-radius w-100" alt="steak dinner and wine">
                         <h3>Dinner Menu</h3>
                     </a>
                 </div>
                 <div class="selection-box">
                     <a href="#">
-                        <img src="images/Chaz_wine.jpg" alt="wine">
+                        <img src="images/chaz_wine.jpg" class="feature-box-shadow w-100" alt="wine bottle and glass">
                         <h3>Wine Menu</h3>
                     </a>
                 </div>
@@ -84,7 +88,6 @@
                     <div class="dining-room-content">
                         <h2>Private Dining Room</h2>
                         <p>Here at Chaz 51 Steakhouse, our private dining room features the best intimate setting for special ocassions such as weddings, birthday parties, anniversaries, and more. Our private room is also perfer for companies looking to host seminars or conferences. Choose from our tier menu and chose the best options to make your event a memorable one. </p>
-
                         <div class="dining-room-features mt-3">
                             Perfect for:
                             <ul>
@@ -105,6 +108,7 @@
             </div>
         </div>
     </section>
+
     <section class="options">
         <div class="container">
             <div class="row">
@@ -170,11 +174,12 @@
                     <img src="./images/pasta_primavera.jpg" onclick="lightbox.open();lightbox.slide(3)" alt="Pasta Primavera" class="ligthbox-thumb" />
                 </div>
                 <div class="col">
-                    <img src="./images/salmon_blue_crabcake.jpg" onclick="lightbox.open();lightbox.slide(4)" alt="Salmon Blue Crabcake" class="ligthbox-thumb"/>
+                    <img src="./images/salmon_blue_crabcake.jpg" onclick="lightbox.open();lightbox.slide(4)" alt="Salmon Blue Crabcake" class="ligthbox-thumb" />
                 </div>
             </div>
         </div>
     </div>
+
     <footer>
         <div class="container">
             <div class="row align-items-center text-center">
